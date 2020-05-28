@@ -1,0 +1,58 @@
+html {
+    width: 100%;
+    min-width: 900px;
+    height: 502px;
+    background: #FFFFFF;
+}
+
+#banner
+{
+    width: 75%;
+    height: 15%;
+    background: #111F48;
+}
+
+input[type=button], .buttonStyle {
+    height: 30px;
+    background: #2D7939;
+    border-radius: 8px;
+    color: white;
+}
+
+input[type=text] {
+    margin-bottom: 5px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-left: 15px;
+}
+  
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#progressBar {
+    border: 1px solid black;
+    width: 75%;
+    height: 15px;
+    margin-top: 40px;
+}
+
+#results {
+    margin-top: 50px;
+    width: 75%; 
+    height: 75%;
+    border: 1px solid black;
+}
+
+.pStyle {
+    font-size: 20px; 
+    display: inline-block; 
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: 20px;
+}

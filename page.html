@@ -1,0 +1,41 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <script src="./implementation.js"></script>
+    </head>
+    <body>
+        <div id="banner"></div>
+        <image src="./images/logo.gif" style="margin-left: 25%;">
+        <div class="row">
+            <div class="column" style="width: 25%;">
+                <h1>Credentials</h1>
+                <form>
+                    <image src="./images/profile.png"/>
+                    <input type="text" placeholder="email@bigbend.edu"/></br>
+                    <image src="./images/lock.png"/> 
+                    <input type="text" placeholder="********"/>
+                </form>
+
+                <h1 style="margin-top: 45px;">Upload .txt File</h1>
+                <form>
+                    <p class="pStyle" style="margin-right: 45px;">Student File</p>
+                    <input type="button" style="width: 90px;" value=".txt"/> 
+                    <image src="./images/upload.png"/></br>
+                    <p class="pStyle">Certificates File</p>
+                    <input type="button" style="width: 90px;" value=".txt"/>
+                    <image src="./images/upload.png"/>
+                </form>
+
+                <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" class="buttonStyle">Run</button>
+                
+            </div>
+            <div class="column">
+                <div id="results"></div>
+                <button  style="margin-left: 28%; margin-top: 10px;" class="buttonStyle">Download Results</button>
+                <image src="./images/download.png" style="margin-top: 5px; margin-right: 25%;"/>
+                <div id="progressBar"></div>
+            </div>
+        
+        
+    </body>
+</html>

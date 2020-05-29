@@ -36,11 +36,11 @@ input[type=text] {
 }
 
 #progressBar {
-    border: 1px solid black;
-    width: 75%;
-    height: 15px;
-    margin-top: 40px;
+   
+    margin-top: 25px;
+    margin-left: 26%;
 }
+
 
 #results {
     margin-top: 50px;

@@ -9,11 +9,11 @@
         <div class="row">
             <div class="column" style="width: 25%;">
                 <h1>Credentials</h1>
-                <form>
+                <form id="credential_forms" name="credentials" onsubmit="return validateForm()">
                     <image src="./images/profile.png"/>
-                    <input type="text" placeholder="email@bigbend.edu"/></br>
+                    <input type="text" id="empID" name = "cName" placeholder="Faculty ID" /></br>
                     <image src="./images/lock.png"/> 
-                    <input type="text" placeholder="********"/>
+                    <input type="text" id="password" name="password" placeholder="********" />
                 </form>
 
                 <h1 style="margin-top: 45px;">Upload .txt File</h1>
@@ -26,16 +26,19 @@
                     <image src="./images/upload.png"/>
                 </form>
 
-                <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" class="buttonStyle">Run</button>
+                <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" class="buttonStyle" form="credential_forms">Run</button>
                 
             </div>
             <div class="column">
                 <div id="results"></div>
-                <button  style="margin-left: 28%; margin-top: 10px;" class="buttonStyle">Download Results</button>
+                <button  style="margin-left: 28%; margin-top: 10px;" class="buttonStyle" onclick="updateProgress(15)">Download Results</button>
                 <image src="./images/download.png" style="margin-top: 5px; margin-right: 25%;"/>
-                <div id="progressBar"></div>
+                <div id="progressBar">
+                    <progress value="0" max="70" id="p"><span>0</span></progress>
+                </div>
             </div>
-        
+
+
         
     </body>
 </html>

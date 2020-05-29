@@ -1,16 +1,17 @@
 function downloadResults() {
 
     // get the results pane from the DOM
-    resultsPane = document.getElementById(results);
+    resultsPane = document.getElementById("results").getElementsByTagName("p");
 
     // create an array each line of text inside the results pane
     resultsList = [];
     
-    for (elem in resultsPane)
+    for (i = 0; i < resultsPane.length; i++)
     {
-        resultsList.append(elem.innerHTML);
+        //alert(resultsPane[i].innerHTML);
+        resultsList.push(resultsPane[i].innerHTML);
     }
-
+    
     // This part would be reserved for writing to a file
 
     // We will not be able to fake this part, as it is not possible

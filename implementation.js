@@ -8,7 +8,7 @@ function downloadResults() {
     
     for (i = 0; i < resultsPane.length; i++)
     {
-        //alert(resultsPane[i].innerHTML);
+        alert(resultsPane[i].innerHTML);
         resultsList.push(resultsPane[i].innerHTML);
     }
     

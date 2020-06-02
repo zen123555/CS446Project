@@ -39,7 +39,7 @@ input[type=text] {
     border: 1px solid black;
     width: 75%;
     height: 15px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 #results {
@@ -51,8 +51,22 @@ input[type=text] {
 
 .pStyle {
     font-size: 20px; 
-    display: inline-block; 
-    vertical-align: middle;
+    position: absolute;
+    display: inline;
+    margin: 0px;
+}
+
+.imageStyle {
+    float: left;
     margin-right: 15px;
-    margin-left: 20px;
+}
+
+.formButton {
+    width: 90px;
+}
+
+#downloadButton {
+    margin-left: 28%; 
+    margin-top: 25px; 
+    float: left;
 }

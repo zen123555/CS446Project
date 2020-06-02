@@ -12,11 +12,15 @@ html {
     background: #111F48;
 }
 
-input[type=button], .buttonStyle {
+input[type=button], .buttonStyle, #customButton1, #customButton2{
     height: 30px;
     background: #2D7939;
     border-radius: 8px;
     color: white;
+}
+
+input[type=button]:hover, .buttonStyle:hover, #customButton1:hover, #customButton2:hover {
+    background-color: #36a847;
 }
 
 input[type=text] {
@@ -75,3 +79,8 @@ input[type=text] {
 #p {
     width: 0%;
 }
+
+.hidden {
+    display: none;
+}
+

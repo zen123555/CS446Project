@@ -21,13 +21,55 @@
                 <br>
 
                 <h1 style="margin-top: 45px;">Upload .txt File</h1>
-                <form style="width: 75%">
+                <form style="width: 80%">
                     <image class="imageStyle" width="25" src="./images/upload.png"/>
-                    <p style="margin-top: 5px;" class="pStyle">Student File</p>
-                    <input type="button" class="formButton" style="margin-left: 150px;" value=".txt"/><br>
+                    <p style="margin-top: 5px;" class="pStyle" id="textBtn1">Student File</p>
+                    <input type="file" accept=".txt" id="realFile1" hidden="hidden"/>
+                    <button type="button" style="margin-left: 160px; padding: 5px;" class="formButton" id="customButton1">.txt</button>
+
+                    <script type="text/javascript">
+                        const realFileBtn1 = document.getElementById("realFile1");
+                        const customBtn1 = document.getElementById("customButton1");
+                        const customText1 = document.getElementById("textBtn1");
+
+                        customBtn1.addEventListener("click", function () {
+                            realFileBtn1.click();
+                        });
+
+                        realFileBtn1.addEventListener("change", function() {
+                            if(realFileBtn1.value) {
+                                customText1.innerHTML = "Upload Successful!";
+                            } else {
+                                customText1.innerHTML = "Upload Failed";
+                            }
+                        });
+                    </script>
+                    
+                    <br>
+                    
                     <image class="imageStyle " style="margin-top: 20px;" width="25" src="./images/upload.png"/>
-                    <p class="pStyle" style="margin-top: 25px;">Certificates File</p>
-                    <input type="button" style="margin-top: 20px; margin-left: 150px;" class="formButton" value=".txt"/>
+                    <p class="pStyle" id="textBtn2" style="margin-top: 25px;">Certificates File</p>
+                    <input type="file" accept=".txt" id="realFile2" hidden="hidden"/>
+                    <button type="button" style="margin-left: 160px; padding: 5px; margin-top: 20px;" class="formButton" id="customButton2">.txt</button>
+
+                    <script type="text/javascript">
+                        const realFileBtn2 = document.getElementById("realFile2");
+                        const customBtn2 = document.getElementById("customButton2");
+                        const customText2 = document.getElementById("textBtn2");
+
+                        customBtn2.addEventListener("click", function () {
+                            realFileBtn2.click();
+                        });
+
+                        realFileBtn2.addEventListener("change", function() {
+                            if(realFileBtn2.value) {
+                                customText2.innerHTML = "Upload Successful!";
+                            } else {
+                                customText2.innerHTML = "Upload Failed";
+                            }
+                        });
+                    </script>
+                    
                 </form>
 
                 <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" class="buttonStyle" form="credential_forms">Run</button>

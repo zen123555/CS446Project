@@ -1,3 +1,35 @@
+const realFileBtn1 = document.getElementById("realFile1");
+const customBtn1 = document.getElementById("customButton1");
+const customText1 = document.getElementById("textBtn1");
+
+customBtn1.addEventListener("click", function () {
+    realFileBtn1.click();
+});
+
+realFileBtn1.addEventListener("change", function() {
+    if(realFileBtn1.value) {
+        customText1.innerHTML = "File Uploaded Successfully!";
+    } else {
+        customText1.innerHTML = "File Upload Failed";
+    }
+});
+
+const realFileBtn2 = document.getElementById("realFile2");
+const customBtn2 = document.getElementById("customButton2");
+const customText2 = document.getElementById("textBtn2");
+
+customBtn2.addEventListener("click", function () {
+    realFileBtn2.click();
+});
+
+realFileBtn2.addEventListener("change", function() {
+    if(realFileBtn2.value) {
+        customText2.innerHTML = "File Uploaded Successfully!";
+    } else {
+        customText2.innerHTML = "File Upload Failed";
+    }
+});
+
 function downloadResults() {
 
     if (validateForm())

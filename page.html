@@ -72,12 +72,15 @@
                     
                 </form>
 
-                <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" class="buttonStyle" form="credential_forms">Run</button>
+                <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" 
+                class="buttonStyle" onClick="runPrototype();">
+                    Run
+                </button>
                 
             </div>
             <div class="column">
                 <div id="results"></div>
-                <div id="progressBar"><progress value="0" max="70" id="p"><span>0</span></progress></div>
+                <div id="progressBar"><progress value="0" max="70" id="pBar"><span>0</span></progress></div>
                 <div>
                     <button onclick="downloadResults()" id="downloadButton" class="buttonStyle">Download Results</button>
                     <image  width="35" src="./images/download.png" style="position: absolute; margin-top: 25px; margin-right: 25%;"/>

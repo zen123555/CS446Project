@@ -1,9 +1,13 @@
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 function downloadResults() {
 
     if (validateForm())
     {
         // get the results pane from the DOM
-        resultsPane = document.getElementById("results").getElementsByTagName("p");
+        resultsPane = document.getElementById("results").getElementsByClassName("pOutput");
 
         resultsStr = "";
 
@@ -28,9 +32,9 @@ function downloadResults() {
 */
 function updateProgress(barIncrease) {
 
-    var pBar = document.getElementById('p');
-    pBar.value += barIncrease;
-    pBar.getElementsByTagName('span')[0].innerHTML = Math.floor((100 / 70) * pBvar.value);
+    var pBar = document.getElementById('pBar');
+    pBar.style.width = barIncrease;
+    pBar.getElementsByTagName('span')[0].innerHTML = barIncrease;
 
 }
 
@@ -49,5 +53,56 @@ function validateForm() {
   	    return false;
     }
 
+    return true;
+
 } 
 
+function runPrototype() {
+    if (validateForm()){
+        addResults();
+    } else {
+        alert("Error running prototype: Check credentials and file upload types.");
+    }
+}
+
+async function addResults(){
+    resultsPane = document.getElementById("results");
+
+        newPara = document.createElement("P");
+        resultsPane.append(newPara);
+
+        newPara.innerHTML = "Starting program";       
+        updateProgress(10);
+        await sleep(3000);
+
+        newPara.innerHTML = "Running student audit"
+
+        await sleep(2500);
+        newPara.innerHTML = "Appending transcript for Jane Doe";
+        updateProgress("10%");
+        await sleep(1000);
+        newPara.innerHTML += "<br>Appending transcript for John Doe";
+        updateProgress("50%");
+        await sleep(2000);
+
+        newPara.innerHTML = "done<br>";
+        await sleep(500);
+        updateProgress("100%");
+
+        newPara.innerHTML = `
+        <p class="pOutput">Student: Jane Doe</p>
+        <p class="pOutput">ID: 123456</p>
+        <p class="pOutput">Certificate: Accomplishment</p>
+        <p class="pOutput">Course 101</p>
+        <p class="pOutput">Course 202</p>
+        <p class="pOutput">Course 303</p><br>
+
+        
+        <p class="pOutput">Student: John Doe</p>
+        <p class="pOutput">Certificate: Accomplishment</p>
+        <p class="pOutput">Course 101</p>
+        <p class="pOutput">Course 102</p>
+        <p class="pOutput">Course 260</p>`;
+
+
+}

@@ -21,6 +21,7 @@ input[type=button], .buttonStyle, #customButton1, #customButton2{
 
 input[type=button]:hover, .buttonStyle:hover, #customButton1:hover, #customButton2:hover {
     background-color: #36a847;
+    cursor: pointer;
 }
 
 input[type=text] {
@@ -52,6 +53,7 @@ input[type=text] {
     width: 75%; 
     height: 75%;
     border: 1px solid black;
+    overflow: scroll;
 }
 
 .pStyle {
@@ -76,7 +78,7 @@ input[type=text] {
     float: left;
 }
 
-#p {
+#pBar {
     width: 0%;
 }
 
@@ -84,3 +86,7 @@ input[type=text] {
     display: none;
 }
 
+.pOutput {
+    margin-top: 5px;
+    margin-left: 10px;
+}

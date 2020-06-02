@@ -12,11 +12,16 @@ html {
     background: #111F48;
 }
 
-input[type=button], .buttonStyle {
+input[type=button], .buttonStyle, #customButton1, #customButton2{
     height: 30px;
     background: #2D7939;
     border-radius: 8px;
     color: white;
+}
+
+input[type=button]:hover, .buttonStyle:hover, #customButton1:hover, #customButton2:hover {
+    background-color: #36a847;
+    cursor: pointer;
 }
 
 input[type=text] {
@@ -36,9 +41,10 @@ input[type=text] {
 }
 
 #progressBar {
-   
-    margin-top: 25px;
-    margin-left: 26%;
+    border: 1px solid black;
+    width: 75%;
+    height: 15px;
+    margin-top: 20px;
 }
 
 
@@ -47,12 +53,40 @@ input[type=text] {
     width: 75%; 
     height: 75%;
     border: 1px solid black;
+    overflow: scroll;
 }
 
 .pStyle {
     font-size: 20px; 
-    display: inline-block; 
-    vertical-align: middle;
+    position: absolute;
+    display: inline;
+    margin: 0px;
+}
+
+.imageStyle {
+    float: left;
     margin-right: 15px;
-    margin-left: 20px;
+}
+
+.formButton {
+    width: 90px;
+}
+
+#downloadButton {
+    margin-left: 28%; 
+    margin-top: 25px; 
+    float: left;
+}
+
+#pBar {
+    width: 0%;
+}
+
+.hidden {
+    display: none;
+}
+
+.pOutput {
+    margin-top: 5px;
+    margin-left: 10px;
 }

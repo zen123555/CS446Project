@@ -9,36 +9,83 @@
         <div class="row">
             <div class="column" style="width: 25%;">
                 <h1>Credentials</h1>
-                <form id="credential_forms" name="credentials" onsubmit="return validateForm()">
-                    <image src="./images/profile.png"/>
-                    <input type="text" id="empID" name = "cName" placeholder="Faculty ID" /></br>
-                    <image src="./images/lock.png"/> 
-                    <input type="text" id="password" name="password" placeholder="********" />
+
+                <form id="credential_forms" name="credentials" onsubmit="return validateForm()" style="width: 75%">
+                    <image width="25" class="imageStyle" src="./images/profile.png"/>
+                    <input id="empID" name = "cName" style="font-size: 14px; margin-top: 5px;" type="text" placeholder="Faculty ID"/></br>
+                    <input id="password" name="password" style="font-size: 14px; margin-top: 8px;" type="text" placeholder="********"/>
+                    <image class="imageStyle " style="font-size: 14px; margin-top: 5px;"" width="25" src="./images/lock.png"/> 
+
                 </form>
+                
+                <br>
 
                 <h1 style="margin-top: 45px;">Upload .txt File</h1>
-                <form>
-                    <p class="pStyle" style="margin-right: 45px;">Student File</p>
-                    <input type="button" style="width: 90px;" value=".txt"/> 
-                    <image src="./images/upload.png"/></br>
-                    <p class="pStyle">Certificates File</p>
-                    <input type="button" style="width: 90px;" value=".txt"/>
-                    <image src="./images/upload.png"/>
+                <form style="width: 80%">
+                    <image class="imageStyle" width="25" src="./images/upload.png"/>
+                    <p style="margin-top: 5px;" class="pStyle" id="textBtn1">Student File</p>
+                    <input type="file" accept=".txt" id="realFile1" hidden="hidden"/>
+                    <button type="button" style="margin-left: 160px; padding: 5px;" class="formButton" id="customButton1">.txt</button>
+
+                    <script type="text/javascript">
+                        const realFileBtn1 = document.getElementById("realFile1");
+                        const customBtn1 = document.getElementById("customButton1");
+                        const customText1 = document.getElementById("textBtn1");
+
+                        customBtn1.addEventListener("click", function () {
+                            realFileBtn1.click();
+                        });
+
+                        realFileBtn1.addEventListener("change", function() {
+                            if(realFileBtn1.value) {
+                                customText1.innerHTML = "Upload Successful!";
+                            } else {
+                                customText1.innerHTML = "Upload Failed";
+                            }
+                        });
+                    </script>
+                    
+                    <br>
+                    
+                    <image class="imageStyle " style="margin-top: 20px;" width="25" src="./images/upload.png"/>
+                    <p class="pStyle" id="textBtn2" style="margin-top: 25px;">Certificates File</p>
+                    <input type="file" accept=".txt" id="realFile2" hidden="hidden"/>
+                    <button type="button" style="margin-left: 160px; padding: 5px; margin-top: 20px;" class="formButton" id="customButton2">.txt</button>
+
+                    <script type="text/javascript">
+                        const realFileBtn2 = document.getElementById("realFile2");
+                        const customBtn2 = document.getElementById("customButton2");
+                        const customText2 = document.getElementById("textBtn2");
+
+                        customBtn2.addEventListener("click", function () {
+                            realFileBtn2.click();
+                        });
+
+                        realFileBtn2.addEventListener("change", function() {
+                            if(realFileBtn2.value) {
+                                customText2.innerHTML = "Upload Successful!";
+                            } else {
+                                customText2.innerHTML = "Upload Failed";
+                            }
+                        });
+                    </script>
+                    
                 </form>
 
-                <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" class="buttonStyle" form="credential_forms">Run</button>
+                <button style="margin-left: 25%; margin-right: 50%; width: 90px; margin-top: 45px;" 
+                class="buttonStyle" onClick="runPrototype();">
+                    Run
+                </button>
                 
             </div>
             <div class="column">
                 <div id="results"></div>
-                <button  style="margin-left: 28%; margin-top: 10px;" class="buttonStyle" onclick="updateProgress(15)">Download Results</button>
-                <image src="./images/download.png" style="margin-top: 5px; margin-right: 25%;"/>
-                <div id="progressBar">
-                    <progress value="0" max="70" id="p"><span>0</span></progress>
+                <div id="progressBar"><progress value="0" max="70" id="pBar"><span>0</span></progress></div>
+                <div>
+                    <button onclick="downloadResults()" id="downloadButton" class="buttonStyle">Download Results</button>
+                    <image  width="35" src="./images/download.png" style="position: absolute; margin-top: 25px; margin-right: 25%;"/>
                 </div>
             </div>
-
-
         
     </body>
 </html>

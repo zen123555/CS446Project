@@ -19,6 +19,8 @@ function validateForm() {
   	alert("Please enter a valid password associated with your faculty login credentials");
   	return false;
   }
-} 
+}
 
-
+function printDiv(divName) {
+     
+}

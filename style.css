@@ -12,11 +12,40 @@ html {
     background: #111F48;
 }
 
-input[type=button], .buttonStyle {
+#customButton1 {
+    padding: 10px;
+    color: white;
+    background-color: #2D7939;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#customButton1:hover {
+    background-color: #36a847;
+}
+
+#customButton2 {
+    padding: 10px;
+    color: white;
+    background-color: #2D7939;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#customButton2:hover {
+    background-color: #36a847;
+}
+
+input[type=button].buttonStyle {
     height: 30px;
     background: #2D7939;
     border-radius: 8px;
     color: white;
+    cursor: pointer;
+}
+
+input[type=button].buttonStyle:hover {
+    background-color: #36a847;
 }
 
 input[type=text] {
@@ -55,4 +84,8 @@ input[type=text] {
     vertical-align: middle;
     margin-right: 15px;
     margin-left: 20px;
+}
+
+.hidden {
+    display: none;
 }

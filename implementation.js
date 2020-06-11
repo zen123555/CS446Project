@@ -34,7 +34,7 @@ function updateProgress(barIncrease) {
 
     var pBar = document.getElementById('pBar');
     pBar.style.width = barIncrease;
-    pBar.getElementsByTagName('span')[0].innerHTML = barIncrease;
+    //pBar.getElementsByTagName('span')[0].innerHTML = barIncrease;
 
 }
 

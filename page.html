@@ -13,7 +13,7 @@
                 <form id="credential_forms" name="credentials" onsubmit="return validateForm()" style="width: 75%">
                     <image width="25" class="imageStyle" src="./images/profile.png"/>
                     <input id="empID" name = "cName" style="font-size: 14px; margin-top: 5px;" type="text" placeholder="Faculty ID"/></br>
-                    <input id="password" name="password" style="font-size: 14px; margin-top: 8px;" type="text" placeholder="********"/>
+                    <input id="password" name="password" style="font-size: 14px; margin-top: 8px;" type="password" placeholder="********"/>
                     <image class="imageStyle " style="font-size: 14px; margin-top: 5px;"" width="25" src="./images/lock.png"/> 
 
                 </form>
@@ -80,9 +80,11 @@
             </div>
             <div class="column">
                 <div id="results"></div>
-                <div id="progressBar"><progress value="0" max="70" id="pBar"><span>0</span></progress></div>
+                <div id="progressBar">
+                    <div id="pBar"></div>
+                </div>
                 <div>
-                    <button onclick="downloadResults()" id="downloadButton" class="buttonStyle">Download Results</button>
+                    <button onclick="downloadResults()" style="width: 150px; margin-left: 200px;" id="downloadButton" class="buttonStyle">Download Results</button>
                     <image  width="35" src="./images/download.png" style="position: absolute; margin-top: 25px; margin-right: 25%;"/>
                 </div>
             </div>

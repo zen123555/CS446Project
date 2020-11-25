@@ -4,14 +4,14 @@ It is to be used by college advisors to cross-refrence what classes students hav
 
 This project was created for our User Interface and Design class. The focus was entirely on the user interface, so there is no backend code. Any animations or functionality displayed by the interface after running it are for visual purposes only. 
 
-TO RUN:
+<h2>To Run:</h2>
 1. Download project and ensure all files are in the same directory
 2. Open HTML file
 3. Enter faculty credentials and password. These can be anything you want, the only requirement is that the form is not left blank.
 4. Upload two txt files. 
 5. Click the "Run" button.
 
-<h1>Features of the interace:</h1>
+<h2>Features of the interace:</h2>
   High fidelity look
   Icons afford to users the information required from them
   Hovering over buttons changes mouse cursor to a hand

@@ -11,8 +11,8 @@ TO RUN:
 4. Upload two txt files. 
 5. Click the "Run" button.
 
-Features of the interace:
-  High fidelity look
+Features of the interace:/n
+  High fidelity look/n
   Icons afford to users the information required from them
   Hovering over buttons changes mouse cursor to a hand
   Progress bar functionality  

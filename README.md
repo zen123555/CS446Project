@@ -5,19 +5,19 @@ It is to be used by college advisors to cross-refrence what classes students hav
 This project was created for our User Interface and Design class. The focus was entirely on the user interface, so there is no backend code. Any animations or functionality displayed by the interface after running it are for visual purposes only. 
 
 <h2>To Run:</h2>
-1. Download project and ensure all files are in the same directory
-2. Open HTML file
-3. Enter faculty credentials and password. These can be anything you want, the only requirement is that the form is not left blank.
-4. Upload two txt files. 
-5. Click the "Run" button.
+<p>1. Download project and ensure all files are in the same directory</p>
+<p>2. Open HTML file</p>
+<p>3. Enter faculty credentials and password. These can be anything you want, the only requirement is that the form is not left blank.</p>
+<p>4. Upload two txt files.</p> 
+<p>5. Click the "Run" button.</p>
 
-<h2>Features of the interace:</h2>
-  High fidelity look
-  Icons afford to users the information required from them
-  Hovering over buttons changes mouse cursor to a hand
-  Progress bar functionality  
-  Scrollbars activate if text overflows
-  Form validation 
+<h2>Features of the Interace:</h2>
+  <p>High fidelity look</p>
+  <p>Icons afford to users the information required from them</p>
+  <p>Hovering over buttons changes mouse cursor to a hand</p>
+  <p>Progress bar functionality</p>  
+  <p>Scrollbars activate if text overflows</p>
+  <p>Form validation</p> 
 
 A formative evaluation testing style was used throughout the creation of this interface. 
 

@@ -4,6 +4,8 @@ It is to be used by college advisors to cross-refrence what classes students hav
 
 This project was created for our User Interface and Design class. The focus was entirely on the user interface, so there is no backend code. Any animations or functionality displayed by the interface after running it are for visual purposes only. 
 
+A formative evaluation testing style was used throughout the creation of this interface. 
+
 <h2>To Run:</h2>
 <p>1. Download project and ensure all files are in the same directory</p>
 <p>2. Open HTML file</p>
@@ -19,7 +21,6 @@ This project was created for our User Interface and Design class. The focus was 
   <p>Scrollbars activate if text overflows</p>
   <p>Form validation</p> 
 
-A formative evaluation testing style was used throughout the creation of this interface. 
 
 
 

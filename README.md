@@ -1,5 +1,4 @@
-# CS446Project
-User interface for Big Bend Community College's certificate program. 
+#User interface for Big Bend Community College's certificate program. 
 It is to be used by college advisors to cross-refrence what classes students have taken. 
 
 This project was created for our User Interface and Design class. The focus was entirely on the user interface, so there is no backend code. Any animations or functionality displayed by the interface after running it are for visual purposes only. 
